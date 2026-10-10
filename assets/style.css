@@ -280,3 +280,6 @@ footer p{margin-top:8px;max-width:36ch}
   .model .row{flex-direction:column;align-items:flex-start;gap:0}
   .model p{font-size:.85rem}
 }
+/* boutons « Découvrir » alignés en bas des cartes */
+.model{display:flex;flex-direction:column;gap:12px}
+.model > .btn{margin-top:auto;align-self:flex-start}
