@@ -1,0 +1,40 @@
+media:
+  input: img/stock
+  output: img/stock
+
+content:
+  - name: stock
+    label: Sacs en stock
+    type: file
+    path: data/stock.json
+    format: json
+    list: true
+    fields:
+      - name: nom
+        label: Nom du modèle
+        type: string
+        required: true
+      - name: couleur
+        label: Couleurs
+        type: string
+      - name: saison
+        label: Collection
+        type: select
+        options:
+          values: [Automne-Hiver, Printemps-Été]
+      - name: prix
+        label: Prix (€)
+        type: number
+        required: true
+      - name: ancien_prix
+        label: Ancien prix barré (€, facultatif)
+        type: number
+      - name: photo
+        label: Photo
+        type: image
+      - name: lien_stripe
+        label: Lien de paiement Stripe (laisser vide = bouton « Réserver »)
+        type: string
+      - name: vendu
+        label: Vendu
+        type: boolean
