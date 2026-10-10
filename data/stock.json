@@ -1,0 +1,212 @@
+[
+  {
+    "nom": "Quadra Mini",
+    "couleur": "Chocolat, crème & marron doré",
+    "saison": "Automne-Hiver",
+    "prix": 40,
+    "ancien_prix": null,
+    "photo": "img/stock/quadra-chocolat.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Arca",
+    "couleur": "Chocolat & bordeaux",
+    "saison": "Automne-Hiver",
+    "prix": 45,
+    "ancien_prix": null,
+    "photo": "img/stock/arca-chocolat.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Pochette Quadra Mini",
+    "couleur": "Kaki & noir",
+    "saison": "Automne-Hiver",
+    "prix": 40,
+    "ancien_prix": null,
+    "photo": "img/stock/pquadra-kaki.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Shella",
+    "couleur": "Chocolat",
+    "saison": "Automne-Hiver",
+    "prix": 70,
+    "ancien_prix": null,
+    "photo": "img/stock/shella-chocolat.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Quadra Mini",
+    "couleur": "Caramel & abricot",
+    "saison": "Automne-Hiver",
+    "prix": 40,
+    "ancien_prix": null,
+    "photo": "img/stock/quadra-caramel.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Satchela",
+    "couleur": "Vert",
+    "saison": "Automne-Hiver",
+    "prix": 60,
+    "ancien_prix": null,
+    "photo": "img/stock/satchela-vert.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Satchela",
+    "couleur": "Caramel",
+    "saison": "Automne-Hiver",
+    "prix": 60,
+    "ancien_prix": null,
+    "photo": "img/stock/satchela-caramel.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Arca Medium",
+    "couleur": "Rose fuchsia & blanc",
+    "saison": "Printemps-Été",
+    "prix": 30,
+    "ancien_prix": 40,
+    "photo": "img/stock/arcamed-fuchsia.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Arca Medium",
+    "couleur": "Verte",
+    "saison": "Printemps-Été",
+    "prix": 30,
+    "ancien_prix": 40,
+    "photo": "img/stock/arcamed-verte.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Arca Mini",
+    "couleur": "Marron & doré",
+    "saison": "Printemps-Été",
+    "prix": 20,
+    "ancien_prix": 30,
+    "photo": "img/stock/arcamini-marron.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Arca Mini",
+    "couleur": "Orange & fuchsia",
+    "saison": "Printemps-Été",
+    "prix": 20,
+    "ancien_prix": 30,
+    "photo": "img/stock/arcamini-orfu.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Arca Mini",
+    "couleur": "Fuchsia & crème",
+    "saison": "Printemps-Été",
+    "prix": 20,
+    "ancien_prix": 30,
+    "photo": "img/stock/arcamini-fucr.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Quadra Mini",
+    "couleur": "Parme & blanc",
+    "saison": "Printemps-Été",
+    "prix": 25,
+    "ancien_prix": 35,
+    "photo": "img/stock/quadra-parme.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Quadra Mini",
+    "couleur": "Fuchsia & blanc",
+    "saison": "Printemps-Été",
+    "prix": 25,
+    "ancien_prix": 35,
+    "photo": "img/stock/quadra-fuchsia.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Arca Mini",
+    "couleur": "Orange & blanc",
+    "saison": "Printemps-Été",
+    "prix": 25,
+    "ancien_prix": 35,
+    "photo": "img/stock/arcamini-orbl.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Quadra Mini",
+    "couleur": "Beige & doré",
+    "saison": "Printemps-Été",
+    "prix": 25,
+    "ancien_prix": 35,
+    "photo": "img/stock/quadra-beige.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Quadra Mini",
+    "couleur": "Bleu & blanc · tissu souple",
+    "saison": "Printemps-Été",
+    "prix": 23,
+    "ancien_prix": 33,
+    "photo": "img/stock/quadra-bleu.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Pochette Quadra Mini",
+    "couleur": "Sauge & blanc · tissu souple",
+    "saison": "Printemps-Été",
+    "prix": 23,
+    "ancien_prix": 33,
+    "photo": "img/stock/pquadra-sauge.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Pochette Quadra Mini",
+    "couleur": "Fuchsia & blanc · tissu souple",
+    "saison": "Printemps-Été",
+    "prix": 23,
+    "ancien_prix": 33,
+    "photo": "img/stock/pquadra-fuchsia.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Pochette Quadra Maxi",
+    "couleur": "Orange & blanc",
+    "saison": "Printemps-Été",
+    "prix": 30,
+    "ancien_prix": 40,
+    "photo": "img/stock/pqmaxi-orange.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  },
+  {
+    "nom": "Pochette Quadra Maxi",
+    "couleur": "Parme & blanc",
+    "saison": "Printemps-Été",
+    "prix": 30,
+    "ancien_prix": 40,
+    "photo": "img/stock/pqmaxi-parme.jpg",
+    "lien_stripe": "",
+    "vendu": false
+  }
+]
