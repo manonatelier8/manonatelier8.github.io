@@ -30,7 +30,27 @@
 </header>
 <main>
 
+  <style>
+    .season-bar{background:var(--choco);color:#F3E6D6;font-size:.9rem;text-align:center;padding:10px 16px}
+    .season-bar a{color:#F6D9A8;font-weight:600}
+    .hero{position:relative;overflow:hidden}
+    .leaf{position:absolute;width:34px;height:34px;opacity:.85;pointer-events:none}
+    .leaf svg{width:100%;height:100%}
+    .leaf.l1{top:18px;left:46%;color:#B5562B;transform:rotate(-25deg)}
+    .leaf.l2{bottom:26px;left:4%;color:#C98A3A;transform:rotate(40deg);width:26px;height:26px}
+    .leaf.l3{top:42%;right:2%;color:#8A3B22;transform:rotate(15deg);width:22px;height:22px}
+    @media (max-width:760px){.leaf.l1{left:auto;right:18px;top:10px}.leaf.l3{display:none}}
+    .autumn{padding-block:0 clamp(48px,7vw,88px)}
+    .autumn a{display:block;border-radius:26px;overflow:hidden;box-shadow:0 24px 50px -30px rgba(63,44,33,.6);position:relative}
+    .autumn img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .6s}
+    .autumn a:hover img{transform:scale(1.02)}
+    .autumn .go{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);background:var(--paper);color:var(--choco);border-radius:999px;padding:.8em 1.4em;font-weight:600;font-size:.92rem;white-space:nowrap}
+    @media (max-width:520px){.autumn img{aspect-ratio:4/3}.autumn .go{bottom:5%;font-size:.82rem}}
+    @media (prefers-reduced-motion:reduce){.autumn img{transition:none}}
+  </style>
+  <div class="season-bar">🍂 La collection Automne-Hiver est arrivée · <a href="en-stock.html">Voir les pièces disponibles</a></div>
   <section class="hero">
+    <span class="leaf l1"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3c4 6 13 7 15 15-5 0-8 3-8 3s5 3 4 9c-6-1-9-5-9-5s-1 6-2 12c-1-6-2-12-2-12s-3 4-9 5c-1-6 4-9 4-9s-3-3-8-3C7 10 16 9 20 3z" fill="currentColor"/></svg></span><span class="leaf l2"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3c4 6 13 7 15 15-5 0-8 3-8 3s5 3 4 9c-6-1-9-5-9-5s-1 6-2 12c-1-6-2-12-2-12s-3 4-9 5c-1-6 4-9 4-9s-3-3-8-3C7 10 16 9 20 3z" fill="currentColor"/></svg></span><span class="leaf l3"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3c4 6 13 7 15 15-5 0-8 3-8 3s5 3 4 9c-6-1-9-5-9-5s-1 6-2 12c-1-6-2-12-2-12s-3 4-9 5c-1-6 4-9 4-9s-3-3-8-3C7 10 16 9 20 3z" fill="currentColor"/></svg></span>
     <div class="wrap">
       <div>
         <p class="eyebrow">Atelier de crochet · Hauts-de-France</p>
@@ -42,9 +62,18 @@
         </div>
       </div>
       <div class="hero-img">
-        <img src="img/hero.jpg" alt="Sac au crochet orange et blanc à anses en bois, posé avec un gerbera orange">
+        <img src="img/stock/satchela-caramel.jpg" alt="Sac Satchela caramel au crochet sur un plaid en laine, avec des pommes de pin">
         <div class="stamp"><b>100 %</b>fait main</div>
       </div>
+    </div>
+  </section>
+
+  <section class="autumn">
+    <div class="wrap">
+      <a href="en-stock.html" aria-label="Voir les pièces Automne-Hiver disponibles immédiatement">
+        <img src="img/automne-hiver.jpg" alt="Les pièces Automne-Hiver, disponibles immédiatement, pièces uniques faites à la main" loading="lazy">
+        <span class="go">Découvrir la collection →</span>
+      </a>
     </div>
   </section>
 
