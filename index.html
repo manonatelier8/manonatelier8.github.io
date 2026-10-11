@@ -18,6 +18,25 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,400;1,500&family=Karla:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Manon Atelier", "description": "Sacs et pochettes au crochet faits main et personnalisables, dans les Hauts-de-France.", "email": "manon.atelier8@outlook.fr", "sameAs": ["https://www.instagram.com/manon.atelier8/"], "areaServed": "FR", "founder": {"@type": "Person", "name": "Manon Couadier"}, "url": "https://manonatelier8.github.io"}</script>
+<style>
+    .cf{position:relative;overflow-x:clip;padding-top:6px}
+    .cf-stage{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+    .cf-card{flex:0 0 240px;scroll-snap-align:center;display:block;background:var(--paper);border-radius:26px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 22px 44px -26px rgba(63,44,33,.5)}
+    .cf-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+    .cf-info{display:grid;justify-items:center;gap:2px;padding:16px 12px 20px;text-align:center}
+    .cf-name{font-family:var(--display);font-size:1.5rem;color:var(--choco);font-style:italic;line-height:1.1}
+    .cf-price{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+    .cf-nav{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:28px}
+    .cf-btn{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:var(--paper);color:var(--choco);font-size:1.5rem;line-height:1;cursor:pointer;transition:border-color .2s,background .2s}
+    .cf-btn:hover{border-color:var(--choco);background:var(--cream)}
+    .cf-count{min-width:72px;text-align:center;border:1.5px solid var(--line);border-radius:999px;padding:.5em 1em;background:var(--paper);font-variant-numeric:tabular-nums;color:var(--muted)}
+    .cf-count b{color:var(--ink)}
+    .cf.ready .cf-stage{position:relative;overflow:visible;display:block;height:clamp(430px,50vw,560px);perspective:1400px;touch-action:pan-y;user-select:none}
+    .cf.ready .cf-card{position:absolute;left:50%;top:0;width:clamp(230px,30vw,340px);transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .4s;transform-origin:50% 60%}
+    .cf.ready .cf-card:not(.on) .cf-info{opacity:.75}
+    @media (max-width:600px){.cf.ready .cf-card{width:62vw}.cf.ready .cf-stage{height:calc(62vw * 1.25 + 92px)}}
+    @media (prefers-reduced-motion:reduce){.cf.ready .cf-card{transition:none}}
+    </style>
 <style>/* signature sur la photo de l'histoire */ .photo-sig{position:relative;min-width:0} .photo-sig .sig{position:absolute;top:5%;left:0;right:0;text-align:center;display:grid;justify-items:center;font-family:var(--display);color:#4A2C1E;line-height:1;font-size:clamp(2.2rem,4.2vw,3.6rem);font-weight:500;white-space:nowrap} .photo-sig .sig > span{display:inline} .photo-sig .sig em{font-style:italic;font-weight:400} .photo-sig .sig small{font-family:var(--body);font-size:clamp(.62rem,.85vw,.76rem);letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin-top:.7em;opacity:.85} @media (max-width:760px){.story .photo-sig img{aspect-ratio:4/5}.photo-sig .sig{font-size:clamp(2rem,9vw,2.8rem)}} </style>
 </head>
 <body>
@@ -165,43 +184,45 @@
         <h2>Quelques <em>modèles</em></h2>
         <p class="lead">Quatorze modèles de sacs, cabas et pochettes au crochet, à composer dans les couleurs de votre choix.</p>
       </div></div>
-      <div class="models featured"><article class="model">
-      <a class="ph" href="modele-ocea.html"><img src="img/ocea-1.jpg" alt="Océa, sac au crochet fait main" loading="lazy"><img class="alt" src="img/ocea-2.jpg" alt="" loading="lazy"></a>
-      <div class="row"><h3><a href="modele-ocea.html" style="text-decoration:none">Océa</a></h3><span class="price"><small>dès</small> 55 €</span></div>
-      <p>Un sac aux inspirations marines, avec anses effet bambou, chaîne dorée et fond rigide, pour vous accompagner tout l’été avec élégance.</p>
-      
-      <a class="btn ghost small" href="modele-ocea.html">Découvrir</a>
-    </article><article class="model">
-      <a class="ph" href="modele-shella.html"><img src="img/shella-1.jpg" alt="Shella, sac au crochet fait main" loading="lazy"><img class="alt" src="img/shella-2.jpg" alt="" loading="lazy"></a>
-      <div class="row"><h3><a href="modele-shella.html" style="text-decoration:none">Shella</a></h3><span class="price"><small>dès</small> 70 €</span></div>
-      <p>Un sac élégant, pensé pour sublimer vos tenues au quotidien.</p>
-      
-      <a class="btn ghost small" href="modele-shella.html">Découvrir</a>
-    </article><article class="model">
-      <a class="ph" href="modele-jovi.html"><img src="img/jovi-2.jpg" alt="Pochette Jovi, pochette au crochet fait main" loading="lazy"><img class="alt" src="img/jovi-1.jpg" alt="" loading="lazy"></a>
-      <div class="row"><h3><a href="modele-jovi.html" style="text-decoration:none">Pochette Jovi</a></h3><span class="price"><small>dès</small> 45 €</span></div>
-      <p>Une petite pochette, parfaite pour accompagner vos tenues du quotidien et sublimer vos looks de soirée.</p>
-      
-      <a class="btn ghost small" href="modele-jovi.html">Découvrir</a>
-    </article><article class="model">
-      <a class="ph" href="modele-satchela.html"><img src="img/satchela-1.jpg" alt="Satchela, sac au crochet fait main" loading="lazy"><img class="alt" src="img/satchela-2.jpg" alt="" loading="lazy"></a>
-      <div class="row"><h3><a href="modele-satchela.html" style="text-decoration:none">Satchela</a></h3><span class="price"><small>dès</small> 60 €</span></div>
-      <p>Un petit cartable plein de caractère pour cet hiver.</p>
-      <span class="sizes">Bandoulière incluse</span>
-      <a class="btn ghost small" href="modele-satchela.html">Découvrir</a>
-    </article><article class="model">
-      <a class="ph" href="modele-nerea.html"><img src="img/nerea-2.jpg" alt="Nerea, sac au crochet fait main" loading="lazy"><img class="alt" src="img/nerea-1.jpg" alt="" loading="lazy"></a>
-      <div class="row"><h3><a href="modele-nerea.html" style="text-decoration:none">Nerea</a></h3><span class="price"><small>dès</small> 50 €</span></div>
-      <p>Un sac déstructuré dont les perles apportent une touche délicate.</p>
-      <span class="sizes">Formats : Classique, Maxi</span>
-      <a class="btn ghost small" href="modele-nerea.html">Découvrir</a>
-    </article><article class="model">
-      <a class="ph" href="modele-allia.html"><img src="img/allia-1.jpg" alt="Allia, sac au crochet fait main" loading="lazy"><img class="alt" src="img/allia-2.jpg" alt="" loading="lazy"></a>
-      <div class="row"><h3><a href="modele-allia.html" style="text-decoration:none">Allia</a></h3><span class="price"><small>dès</small> 50 €</span></div>
-      <p>Un mélange de matières qui casse les codes du sac chic, pour une allure élégante, moderne et pleine de caractère.</p>
-      
-      <a class="btn ghost small" href="modele-allia.html">Découvrir</a>
-    </article></div>
+      <div class="cf" id="cf" aria-roledescription="carrousel" aria-label="Les modèles Manon Atelier">
+        <div class="cf-stage"><a class="cf-card" href="modele-ova-mini.html" data-i="0"><img src="img/ova-mini.jpg" alt="Ova Mini, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Ova Mini</span><span class="cf-price">dès 35 €</span></span></a><a class="cf-card" href="modele-ova-maxi.html" data-i="1"><img src="img/ova-maxi.jpg" alt="Ova Maxi, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Ova Maxi</span><span class="cf-price">dès 45 €</span></span></a><a class="cf-card" href="modele-quadra-mini.html" data-i="2"><img src="img/quadra-mini.jpg" alt="Quadra Mini, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Quadra Mini</span><span class="cf-price">dès 40 €</span></span></a><a class="cf-card" href="modele-quadra-maxi.html" data-i="3"><img src="img/quadra-maxi.jpg" alt="Quadra Maxi, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Quadra Maxi</span><span class="cf-price">dès 40 €</span></span></a><a class="cf-card" href="modele-arca.html" data-i="4"><img src="img/arca-1.jpg" alt="Arca, pochette au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Arca</span><span class="cf-price">dès 45 €</span></span></a><a class="cf-card" href="modele-ocea.html" data-i="5"><img src="img/ocea-1.jpg" alt="Océa, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Océa</span><span class="cf-price">dès 55 €</span></span></a><a class="cf-card" href="modele-nerea.html" data-i="6"><img src="img/nerea-2.jpg" alt="Nerea, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Nerea</span><span class="cf-price">dès 50 €</span></span></a><a class="cf-card" href="modele-merea.html" data-i="7"><img src="img/merea.jpg" alt="Merea, cabas au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Merea</span><span class="cf-price">dès 60 €</span></span></a><a class="cf-card" href="modele-shella.html" data-i="8"><img src="img/shella-1.jpg" alt="Shella, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Shella</span><span class="cf-price">dès 70 €</span></span></a><a class="cf-card" href="modele-jovi.html" data-i="9"><img src="img/jovi-2.jpg" alt="Pochette Jovi, pochette au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Pochette Jovi</span><span class="cf-price">dès 45 €</span></span></a><a class="cf-card" href="modele-duna.html" data-i="10"><img src="img/duna.jpg" alt="Duna, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Duna</span><span class="cf-price">dès 55 €</span></span></a><a class="cf-card" href="modele-satchela.html" data-i="11"><img src="img/satchela-1.jpg" alt="Satchela, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Satchela</span><span class="cf-price">dès 60 €</span></span></a><a class="cf-card" href="modele-allia.html" data-i="12"><img src="img/allia-1.jpg" alt="Allia, sac au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Allia</span><span class="cf-price">dès 50 €</span></span></a><a class="cf-card" href="modele-nunca.html" data-i="13"><img src="img/nunca.jpg" alt="Nunca, pochette au crochet fait main" loading="lazy" draggable="false"><span class="cf-info"><span class="cf-name">Nunca</span><span class="cf-price">dès 20 €</span></span></a></div>
+        <div class="cf-nav">
+          <button type="button" class="cf-btn" id="cf-prev" aria-label="Modèle précédent">‹</button>
+          <span class="cf-count" aria-live="polite"><b id="cf-cur">1</b>/14</span>
+          <button type="button" class="cf-btn" id="cf-next" aria-label="Modèle suivant">›</button>
+        </div>
+      </div>
+      <script>
+      (function(){
+        var root=document.getElementById('cf'); if(!root) return;
+        var cards=[].slice.call(root.querySelectorAll('.cf-card')), n=cards.length, cur=0;
+        root.classList.add('ready');
+        function render(){
+          cards.forEach(function(c,i){
+            var o=i-cur; if(o>n/2) o-=n; if(o<-n/2) o+=n;
+            var a=Math.abs(o), side=o<0?-1:1;
+            var tx=o===0?0:side*(a===1?62:100), sc=o===0?1:(a===1?.8:.65), ry=o===0?0:-side*(a===1?14:20);
+            c.style.transform='translateX(-50%) translateX('+tx+'%) scale('+sc+') rotateY('+ry+'deg)';
+            c.style.zIndex=10-a; c.style.opacity=a>2?0:(a===2?.35:1);
+            c.style.pointerEvents=a>1?'none':'auto';
+            c.classList.toggle('on',o===0);
+            c.setAttribute('aria-hidden',o===0?'false':'true');
+            c.tabIndex=o===0?0:-1;
+          });
+          document.getElementById('cf-cur').textContent=cur+1;
+        }
+        function go(d){cur=(cur+d+n)%n;render();}
+        document.getElementById('cf-prev').onclick=function(){go(-1);};
+        document.getElementById('cf-next').onclick=function(){go(1);};
+        cards.forEach(function(c,i){c.addEventListener('click',function(e){if(i!==cur){e.preventDefault();cur=i;render();}});});
+        root.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1);});
+        var x0=null,moved=false;
+        root.addEventListener('pointerdown',function(e){x0=e.clientX;moved=false;});
+        root.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;x0=null;if(Math.abs(dx)>40){moved=true;go(dx<0?1:-1);}});
+        root.addEventListener('click',function(e){if(moved){e.preventDefault();moved=false;}},true);
+        render();
+      })();
+      </script>
       <div class="more"><a class="btn" href="modeles.html">Voir les 14 modèles</a></div>
     </div>
   </section>
