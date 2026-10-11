@@ -40,6 +40,7 @@
     "saison": "Automne-Hiver",
     "prix": 40,
     "photo": "img/stock/quadra-chocolat.jpg",
+    "lien_stripe": "https://buy.stripe.com/5kQ28q34t8jrejHbU7gEg05",
     "vendu": false
   },
   {
