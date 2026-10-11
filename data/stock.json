@@ -57,6 +57,7 @@
     "saison": "Automne-Hiver",
     "prix": 40,
     "photo": "img/stock/pquadra-kaki.jpg",
+    "lien_stripe": "https://buy.stripe.com/9B66oG9sR1V38Zne2fgEg04",
     "vendu": false
   },
   {
