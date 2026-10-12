@@ -62,6 +62,7 @@
     `<label class="chip"><input type="${type}" name="${name}" value="${esc(val)}" ${checked ? "checked" : ""}><span>${extra}${esc(label)}${add ? ` <em>+${add} €</em>` : ""}</span></label>`;
   $("#f-extras").innerHTML = D.extras.map(e => chip("extra", "checkbox", e, e)).join("");
   $("#f-chain").innerHTML = D.chains.map((c, i) => chip("chain", "radio", c.id, c.label, "", i === 0, c.add)).join("");
+  $("#f-ship").innerHTML = D.ship.map((x, i) => `<label class="chip"><input type="radio" name="ship" value="${x.id}" ${i === 0 ? "checked" : ""}><span>${esc(x.label)} <em>+${euro(x.add)}</em></span></label>`).join("");
   $("#f-len").innerHTML = D.lens.map((l, i) => chip("len", "radio", l.id, l.label, "", i === 1, l.add)).join("");
   $("#f-flower").innerHTML = D.flowers.map(([n, c], i) => chip("flower", "radio", n, n, `<i class="dot" style="background:${c}"></i>`, i === 0)).join("");
 
@@ -80,7 +81,8 @@
     $("#flower-wrap").hidden = chain.id !== "fleurs";
     const extras = $$('input[name="extra"]:checked', cfg).map(i => i.value);
     const size = m.sizes ? fSize.value : "";
-    const total = m.price + (hasChain ? chain.add + len.add : 0);
+    const ship = D.ship.find(x => x.id === val("ship"));
+    const total = Math.round((m.price + (hasChain ? chain.add + len.add : 0) + ship.add) * 100) / 100;
     const colors = $("#f-colors").value.trim();
     const lines = [["Modèle", m.name + (size ? ` · ${size}` : "")], ["Prix de départ", `${m.price} €`], ["Couleurs", colors || "à définir"]];
     if (extras.length) lines.push(["Finitions", extras.join(", ")]);
@@ -89,12 +91,13 @@
       lines.push(["Longueur", `${len.label}${len.add ? ` (+${len.add} €)` : ""}`]);
       if (chain.id === "fleurs") lines.push(["Fleurs", val("flower")]);
     }
+    lines.push(["Livraison", `${ship.label} Mondial Relay (+${euro(ship.add)})`]);
     $("#s-title").textContent = m.name;
     $("#s-lines").innerHTML = lines.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("");
-    $("#s-total").textContent = `${total} €`;
+    $("#s-total").textContent = euro(total);
     const name = $("#f-name").value.trim(), contact = $("#f-contact").value.trim(), note = $("#f-msg").value.trim();
     const msg = `Bonjour Manon !\n\nJe souhaite créer mon sac sur mesure :\n` +
-      lines.map(([k, v]) => `• ${k} : ${v}`).join("\n") + `\n• Estimation : ${total} €` +
+      lines.map(([k, v]) => `• ${k} : ${v}`).join("\n") + `\n• Estimation, livraison comprise : ${euro(total)}` +
       (note ? `\n\nMon message :\n${note}` : "") + `\n\n${name || "[Prénom]"}${contact ? ` · ${contact}` : ""}`;
     $("#s-msg").textContent = msg;
     $("#send-mail").href = `mailto:${EMAIL}?subject=${encodeURIComponent("Commande sur mesure · " + m.name)}&body=${encodeURIComponent(msg)}`;
