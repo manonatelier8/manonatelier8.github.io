@@ -209,15 +209,5 @@
     "photo": "img/stock/pqmaxi-parme.jpg",
     "lien_stripe": "https://buy.stripe.com/eVqaEW0Wl1V34J78HVgEg0k",
     "vendu": false
-  },
-  {
-    "nom": "Arca Maxi",
-    "couleur": "Rose, fuchsia & orange",
-    "saison": "Printemps-Été",
-    "prix": 55,
-    "ancien_prix": 65,
-    "photo": "img/stock/IMG_1611.jpeg",
-    "lien_stripe": "https://buy.stripe.com/dRm4gy5cB2Z7grPbU7gEg0o",
-    "vendu": false
   }
 ]
