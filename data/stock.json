@@ -209,5 +209,13 @@
     "photo": "img/stock/pqmaxi-parme.jpg",
     "lien_stripe": "https://buy.stripe.com/eVqaEW0Wl1V34J78HVgEg0k",
     "vendu": false
+  },
+  {
+    "nom": "Allia léopard",
+    "saison": "Automne-Hiver",
+    "prix": 55,
+    "photo": "img/stock/tempImageAqpbRt.jpg",
+    "lien_stripe": "https://buy.stripe.com/eVqeVc20p43b8Zn4rFgEg0p",
+    "vendu": false
   }
 ]
