@@ -60,7 +60,11 @@
 
   const chip = (name, type, val, label, extra = "", checked = false, add = 0) =>
     `<label class="chip"><input type="${type}" name="${name}" value="${esc(val)}" ${checked ? "checked" : ""}><span>${extra}${esc(label)}${add ? ` <em>+${add} €</em>` : ""}</span></label>`;
-  $("#f-extras").innerHTML = D.extras.map(e => chip("extra", "checkbox", e, e)).join("");
+  function renderExtras() {
+    const m = D.models.find(x => x.id === fModel.value);
+    const kept = $$('input[name="extra"]:checked', cfg).map(i => i.value);
+    $("#f-extras").innerHTML = D.extras.map(e => chip("extra", "checkbox", e, e, "", kept.includes(e), e === "Doublure" ? m.lining : 0)).join("");
+  }
   $("#f-chain").innerHTML = D.chains.map((c, i) => chip("chain", "radio", c.id, c.label, "", i === 0, c.add)).join("");
   $("#f-ship").innerHTML = D.ship.map((x, i) => `<label class="chip"><input type="radio" name="ship" value="${x.id}" ${i === 0 ? "checked" : ""}><span>${esc(x.label)} <em>+${euro(x.add)}</em></span></label>`).join("");
   $("#f-len").innerHTML = D.lens.map((l, i) => chip("len", "radio", l.id, l.label, "", i === 1, l.add)).join("");
@@ -68,6 +72,7 @@
 
   const val = n => (cfg.querySelector(`input[name="${n}"]:checked`) || {}).value;
   function updateSizes() {
+    renderExtras();
     const m = D.models.find(x => x.id === fModel.value);
     $("#size-wrap").hidden = !m.sizes;
     fSize.innerHTML = m.sizes ? m.sizes.map(s => `<option>${esc(s)}</option>`).join("") : "";
@@ -82,10 +87,11 @@
     const extras = $$('input[name="extra"]:checked', cfg).map(i => i.value);
     const size = m.sizes ? fSize.value : "";
     const ship = D.ship.find(x => x.id === val("ship"));
-    const total = Math.round((m.price + (hasChain ? chain.add + len.add : 0) + ship.add) * 100) / 100;
+    const lining = extras.includes("Doublure") ? m.lining : 0;
+    const total = Math.round((m.price + (hasChain ? chain.add + len.add : 0) + lining + ship.add) * 100) / 100;
     const colors = $("#f-colors").value.trim();
     const lines = [["Modèle", m.name + (size ? ` · ${size}` : "")], ["Prix de départ", `${m.price} €`], ["Couleurs", colors || "à définir"]];
-    if (extras.length) lines.push(["Finitions", extras.join(", ")]);
+    if (extras.length) lines.push(["Finitions", extras.map(e => e === "Doublure" ? `Doublure (+${m.lining} €)` : e).join(", ")]);
     if (hasChain) {
       lines.push(["Chaîne", `${chain.label} (+${chain.add} €)`]);
       lines.push(["Longueur", `${len.label}${len.add ? ` (+${len.add} €)` : ""}`]);
