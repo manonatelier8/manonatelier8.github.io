@@ -218,5 +218,14 @@
     "photo": "img/stock/pqmaxi-parme.jpg",
     "lien_stripe": "https://buy.stripe.com/eVqaEW0Wl1V34J78HVgEg0k",
     "vendu": false
+  },
+  {
+    "nom": "Quadra Mini",
+    "couleur": "Bordeaux ",
+    "saison": "Automne-Hiver",
+    "prix": 40,
+    "photo": "img/stock/IMG_2144.jpeg",
+    "lien_stripe": "https://buy.stripe.com/7sY14m34t8jrfnL6zNgEg0q",
+    "vendu": false
   }
 ]
