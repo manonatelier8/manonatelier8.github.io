@@ -261,6 +261,7 @@
     "saison": "Automne-Hiver",
     "prix": 45,
     "photo": "img/stock/IMG_2590.jpeg",
+    "lien_stripe": "https://buy.stripe.com/bJe7sK34tczH1wV9LZgEg0v",
     "vendu": false
   }
 ]
