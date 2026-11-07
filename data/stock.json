@@ -229,11 +229,17 @@
     "vendu": true
   },
   {
-    "nom": "Quadra Mini ",
+    "nom": "Quadra Mini",
+    "couleur": " Jaguar",
     "saison": "Automne-Hiver",
     "prix": 40,
     "photo": "img/stock/IMG_1880.jpeg",
     "lien_stripe": "https://buy.stripe.com/bJe28qeNb57f0sRe2fgEg0s",
+    "vendu": false
+  },
+  {
+    "nom": "Quadra Mini - gr",
+    "prix": 0,
     "vendu": false
   }
 ]
