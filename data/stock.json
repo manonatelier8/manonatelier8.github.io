@@ -230,7 +230,7 @@
   },
   {
     "nom": "Quadra Mini",
-    "couleur": " Jaguar",
+    "couleur": " Jaguar - mélange fe",
     "saison": "Automne-Hiver",
     "prix": 40,
     "photo": "img/stock/IMG_1880.jpeg",
@@ -238,7 +238,8 @@
     "vendu": false
   },
   {
-    "nom": "Quadra Mini - gr",
+    "nom": "Quadra Mini",
+    "couleur": "Gris ",
     "prix": 0,
     "vendu": false
   }
