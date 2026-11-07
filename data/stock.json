@@ -227,5 +227,13 @@
     "photo": "img/stock/IMG_2144.jpeg",
     "lien_stripe": "https://buy.stripe.com/7sY14m34t8jrfnL6zNgEg0q",
     "vendu": true
+  },
+  {
+    "nom": "Quadra Mini ",
+    "saison": "Automne-Hiver",
+    "prix": 40,
+    "photo": "img/stock/IMG_1880.jpeg",
+    "lien_stripe": "https://buy.stripe.com/bJe28qeNb57f0sRe2fgEg0s",
+    "vendu": false
   }
 ]
