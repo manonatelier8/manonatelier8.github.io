@@ -263,5 +263,14 @@
     "photo": "img/stock/IMG_2590.jpeg",
     "lien_stripe": "https://buy.stripe.com/bJe7sK34tczH1wV9LZgEg0v",
     "vendu": false
+  },
+  {
+    "nom": "Spalla ",
+    "couleur": "Marron & taupe",
+    "saison": "Automne-Hiver",
+    "prix": 75,
+    "photo": "img/stock/IMG_2615.jpeg",
+    "lien_stripe": "https://buy.stripe.com/28EaEW5cB57fa3rgangEg0w",
+    "vendu": false
   }
 ]
